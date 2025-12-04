@@ -1,0 +1,50 @@
+<svg class="bg-svg" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;">
+  <defs>
+    <!-- 漸層天空 -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a1f"/>
+      <stop offset="100%" stop-color="#0b0b12"/>
+    </linearGradient>
+
+    <!-- 光暈效果 -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景天空 -->
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+
+  <!-- 高樓簡化矩形 -->
+  <g stroke-width="3" fill="none" filter="url(#glow)">
+    <!-- 建築物外框 -->
+    <rect x="100" y="400" width="120" height="500" stroke="#00f3ff"/>
+    <rect x="250" y="450" width="100" height="480" stroke="#b517f0"/>
+    <rect x="400" y="420" width="140" height="520" stroke="#00f3ff"/>
+    <rect x="600" y="470" width="90" height="500" stroke="#b517f0"/>
+    <rect x="750" y="430" width="130" height="520" stroke="#00f3ff"/>
+    <rect x="950" y="450" width="100" height="500" stroke="#b517f0"/>
+  </g>
+
+  <!-- 霓虹燈條 -->
+  <g stroke-width="2" fill="none">
+    <line x1="100" y1="500" x2="220" y2="500" stroke="#00f3ff"/>
+    <line x1="250" y1="530" x2="350" y2="530" stroke="#b517f0"/>
+    <line x1="400" y1="460" x2="540" y2="460" stroke="#00f3ff"/>
+    <line x1="600" y1="500" x2="690" y2="500" stroke="#b517f0"/>
+  </g>
+
+  <!-- 雲彩霓虹光 -->
+  <ellipse cx="700" cy="200" rx="150" ry="50" fill="rgba(0,243,255,0.15)"/>
+  <ellipse cx="900" cy="150" rx="120" ry="40" fill="rgba(181,23,240,0.15)"/>
+  <ellipse cx="1200" cy="250" rx="100" ry="35" fill="rgba(0,243,255,0.1)"/>
+
+  <!-- 漂浮粒子 -->
+  <circle class="particle" cx="800" cy="300" r="2" fill="#00f3ff" opacity="0.7"/>
+  <circle class="particle" cx="950" cy="350" r="2" fill="#b517f0" opacity="0.6"/>
+  <circle class="particle" cx="1100" cy="400" r="2" fill="#00f3ff" opacity="0.5"/>
+</svg>
