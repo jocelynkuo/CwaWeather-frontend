@@ -33,21 +33,11 @@
 
       body {
         font-family: "Zen Maru Gothic", sans-serif;
-        background: var(--night);
+        /* background: var(--night); */
         color: var(--text-light);
         min-height: 100vh;
-
-        /* 等距 isometric 格線背景 */
-        background-image: linear-gradient(
-            45deg,
-            rgba(0, 243, 255, 0.08) 1px,
-            transparent 1px
-          ),
-          linear-gradient(-45deg, rgba(181, 23, 240, 0.08) 1px, transparent 1px);
-        background-size: 50px 50px;
-
-        overflow-x: hidden;
-        padding-bottom: 30px;
+        /* background */
+        background: url("/bg-weather.jpg") center/cover no-repeat fixed;
       }
 
       /* ===== Header ===== */
