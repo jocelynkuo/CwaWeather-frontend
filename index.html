@@ -46,8 +46,8 @@
         justify-content: space-between;
         align-items: center;
         padding: 18px 20px;
-        background: rgba(11, 11, 18, 0.7);
-        backdrop-filter: blur(12px);
+        /* background: rgba(11, 11, 18, 0.7); */
+        /* backdrop-filter: blur(12px); */
         border-bottom: 1px solid rgba(0, 243, 255, 0.4);
         box-shadow: 0 0 12px rgba(0, 243, 255, 0.4);
         position: sticky;
@@ -70,7 +70,7 @@
         border-radius: 20px;
         font-weight: 900;
         border: 1px solid var(--neon-blue);
-        text-shadow: 0 0 8px var(--neon-blue);
+        /* text-shadow: 0 0 8px var(--neon-blue); */
         font-size: 1rem;
       }
 
@@ -91,7 +91,9 @@
 
       /* ===== 今日卡片（霓虹主卡） ===== */
       .hero-card {
-        background: rgba(255, 255, 255, 0.03);
+        background: rgba(0, 0, 0, 0.8);
+        /* backdrop-filter: blur(8px);  */
+        /* 可選：讓背景更霧面 */
         border-radius: 30px;
         padding: 30px 25px;
         text-align: center;
@@ -133,7 +135,7 @@
 
       .hero-icon {
         font-size: 5rem;
-        filter: drop-shadow(0 0 12px var(--neon-blue));
+        /* filter: drop-shadow(0 0 12px var(--neon-blue)); */
         animation: float 4s infinite ease-in-out;
       }
 
@@ -151,7 +153,7 @@
         font-size: 4.2rem;
         font-weight: 900;
         color: var(--neon-blue);
-        text-shadow: 0 0 12px var(--neon-blue);
+        /* text-shadow: 0 0 12px var(--neon-blue); */
       }
 
       .hero-desc {
@@ -182,7 +184,7 @@
 
       .advice-icon {
         font-size: 2rem;
-        text-shadow: 0 0 8px var(--neon-purple);
+        /* text-shadow: 0 0 8px var(--neon-purple); */
       }
 
       .advice-text {
@@ -190,14 +192,14 @@
         font-weight: 700;
         color: var(--neon-blue);
         margin-top: 6px;
-        text-shadow: 0 0 6px var(--neon-blue);
+        /* text-shadow: 0 0 6px var(--neon-blue); */
       }
 
       /* ===== 稍後預報 ===== */
       .section-title {
         font-size: 1.2rem;
         color: var(--neon-blue);
-        text-shadow: 0 0 10px var(--neon-blue);
+        /* text-shadow: 0 0 10px var(--neon-blue); */
         margin-bottom: 12px;
         margin-left: 8px;
         font-weight: 800;
@@ -218,7 +220,8 @@
       .mini-card {
         min-width: 140px;
         padding: 18px 15px;
-        background: rgba(255, 255, 255, 0.06);
+        background: rgba(0, 0, 0, 0.6);
+        /* filter: drop-shadow(0 0 8px var(--neon-blue)); */
         border-radius: 20px;
 
         border: 1px solid var(--neon-blue);
@@ -236,13 +239,13 @@
         border-radius: 12px;
         display: inline-block;
         margin-bottom: 10px;
-        text-shadow: 0 0 8px var(--neon-purple);
+        /* text-shadow: 0 0 8px var(--neon-purple); */
       }
 
       .mini-icon {
         font-size: 2.3rem;
         margin: 5px 0;
-        filter: drop-shadow(0 0 8px var(--neon-blue));
+        /* filter: drop-shadow(0 0 8px var(--neon-blue)); */
       }
 
       .mini-temp {
